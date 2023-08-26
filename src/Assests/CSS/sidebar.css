@@ -1,0 +1,164 @@
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../fonts/Agrandir-700.otf');
+    font-weight: 700;    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+  }
+  
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav_container li {
+    list-style: none;
+  }
+  
+  .navbar .nav_container .item {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  .navbar .nav_container .item:hover{
+      font-weight: bolder;
+      background-color: #facf0f80;
+      border-radius: 5px;
+  }
+
+  .not_active {
+    font-weight: 500;
+    color: #0e2431;
+  }
+
+  .active{
+      font-weight: 700;
+      color: #facf0f;
+  }
+  
+  .nav_container {
+    display: block;
+    position: relative;
+    height: 60px;
+    background-color: #000;
+  }
+  
+  .nav_container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav_container .hamburger_lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav_container .hamburger_lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .nav_container .hamburger_lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav_container .hamburger_lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav_container .hamburger_lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu_items {
+    background-color: black;
+    padding-top: 60px;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+ 
+  }
+  
+  .navbar .menu_items p {
+    width: 40%;
+    margin: 0 30%;
+    padding: 15px 0;
+    font-family: 'Agrandir';
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #303030;
+  }
+
+  .navbar .icons {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav_container input[type="checkbox"]:checked ~ .menu_items {
+    transform: translateX(0);
+  }
+  
+  .nav_container input[type="checkbox"]:checked ~ .hamburger_lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav_container input[type="checkbox"]:checked ~ .hamburger_lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav_container input[type="checkbox"]:checked ~ .hamburger_lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  @media (min-width: 1000px){
+
+    .container {
+        display: none;
+    }
+  }

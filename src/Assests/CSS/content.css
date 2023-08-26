@@ -1,0 +1,178 @@
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../fonts/Agrandir-800.otf');
+    font-weight: 800;    
+}
+
+.content {
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .cube {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+}
+
+.content .cubes {
+    position: absolute;
+    top: 72%;
+    left: 12%;
+}
+
+.content .stairs {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+
+.content .pillar {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+}
+
+.content .content-inner {
+    width: 100%;
+    text-align: center;
+}
+
+.content .content-inner h1 {
+    font-family: 'Agrandir';
+    font-size: 190px;
+    font-weight: 800;
+    line-height: 130px;
+    color: #fff;
+    margin: 0;
+}
+
+.content .content-inner .cash {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+
+.content .content-inner .phone {
+    position: absolute;
+    z-index: 0;
+    top: 25%;
+    left: 34%;
+}
+
+.content .content-inner .app-text {
+    position: absolute;
+    height: 100px;
+    z-index: 0;
+    top: 53%;
+    left: 25%;
+}
+
+@media (max-width: 1000px){
+    .content .content-inner h1 {
+        font-size: 120px;
+        line-height: 100px;
+    }
+
+    .content .content-inner .cash {
+        top: 43%;
+        left: 20%;
+    }
+    
+    .content .content-inner .phone {
+        top: 35%;
+        left: 40%;
+        height: 300px;
+    }
+    
+    .content .content-inner .app-text {
+        top: 55%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .content .cube {
+        position: absolute;
+        top: 10%;
+        left: 0%;
+    }
+    
+    .content .cubes {
+        position: absolute;
+        top: 70%;
+        left: -10%;
+    }
+    
+    .content .stairs {
+        position: relative;
+        left: 75%;
+        top: -30%;
+    }
+    
+    .content .pillar {
+        position: relative;
+        top: 30%;
+        left: 10%;
+    }
+
+    .content .content-inner h1 {
+        font-size: 90px;
+        line-height: 50px;
+    }
+
+    .content .content-inner .cash {
+        top: 45%;
+        left: 7%;
+    }
+    
+    .content .content-inner .phone {
+        top: 35%;
+        left: 27%;
+        height: 300px;
+    }
+    
+    .content .content-inner .app-text {
+        top: 55%;
+        left: 20%;
+    }
+
+}
+
+@media (min-width: 1500px){
+
+    .content .content-inner h1 {
+        font-size: 200px;
+        line-height: 170px;
+    }
+
+    .content .content-inner .cash {
+        top: 40%;
+        left: 25%;
+    }
+    
+    .content .content-inner .phone {
+        top: 30%;
+        left: 40%;
+        height: 500px;
+    }
+    
+    .content .content-inner .app-text {
+        top: 56%;
+        left: 33%;
+    }
+
+}
